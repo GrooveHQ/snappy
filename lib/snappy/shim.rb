@@ -13,7 +13,7 @@ module Snappy
     end
   else
     def set_encoding(io)
-      io.set_encoding Encoding::ASCII_8BIT
+      io.set_encoding Encoding::UTF_8
       io
     end
 
@@ -23,7 +23,7 @@ module Snappy
       end
     else
       def b(str)
-        str.force_encoding Encoding::ASCII_8BIT
+        str.force_encoding Encoding::UTF_8
       end
     end
   end
